@@ -1,0 +1,122 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+
+<swiper class='swiperBox' indicator-dots="{{indicatorDots}}" indicator-color="rgba(0,0,0,0.2)" indicator-active-color="#000000" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <swiper-item>
+    <image src="/images/Rectangle3@2x.png" class="slide-image" width="690" height="272" />
+    <view class='priceBigBox'>
+      <view class='priceBox' wx:for="{{priceList}}" wx:for-index="index" wx:for-item="item">
+        <view class='hao'>{{item.number}}</view>
+        <view class='price1'>{{item.price1}}</view>
+        <view class='price2'>{{item.price2}}</view>
+      </view>
+    </view>
+  </swiper-item>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="690" height="272" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='userBox'>
+  <view class='avatarBox'>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+  </view>
+  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <view class='openApp'>打开我家加油APP</view>
+</view>
+
+<view class='iconBox'>
+  <view class='iconSbox'>
+    <image src='/images/Rectangle4@2x.png'></image>
+    <text>邀请红包(2)</text>
+  </view>
+  <view class='iconSbox'>
+    <view class='redDot'>12</view>
+    <image src='/images/Rectangle5@2x.png'></image>
+    <text>卡券(2)</text>
+  </view>
+  <view class='iconSbox'>
+    <image src='/images/Rectangle6@2x.png'></image>
+    <text>积分(2)</text>
+  </view>
+  <view class='iconSbox'>
+    <image src='/images/Rectangle118@2x.png'></image>
+    <text>加油记录(2)</text>
+  </view>
+</view>
+
+<view class='dayActive'>日常活动</view>
+
+<view class='listBox' wx:for="{{arrayList}}" wx:for-index="index" wx:for-item="item">
+  <image class='listImg' src='{{item.img}}'></image>
+  <view class='rightBox'>
+    <view class='listTitle'>{{item.title}}</view>
+    <view class='timeBox'>
+      <view class='time'>{{item.time}}</view>
+      <view class='look'>
+        <image src='/images/read copy2@2x.png' mode='widthFix'></image>
+        <text>{{item.look}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<image class='jiayouBtn' src='/images/jiayou.png' mode='widthFix'></image>
+
+<view class='awardBox' style='{{newAward?"":"display:none"}}'>
+  <image class='bg' src='/images/bj.png'></image>
+  <view class='bg'>
+    <view class='gx'>恭喜你获得新用户奖励</view>
+    <view class='quanBox'>
+      <view class='quanBgBox'>
+        <image src='/images/1.png' mode='widthFix'></image>
+        <view class='quanName'>积分</view>
+      </view>
+      <view class='quanNumber'>X10</view>
+    </view>
+    <view class='quanBox'>
+      <view class='quanBgBox'>
+        <image src='/images/2.png' mode='widthFix'></image>
+        <view class='quanName'>10元加油券</view>
+      </view>
+      <view class='quanNumber'>X2</view>
+    </view>
+    <view class='quanBox'>
+      <view class='quanBgBox'>
+        <image src='/images/3.png' mode='widthFix'></image>
+        <view class='quanName'>洗车券</view>
+      </view>
+      <view class='quanNumber'>X1</view>
+    </view>
+    <view class='quanTip'>下载“我家加油”APP可再获得以下奖励哦~</view>
+    <view class='quanBox'>
+      <view class='quanBgBox'>
+        <image src='/images/4.png' mode='widthFix'></image>
+        <view class='quanName'>便利店券</view>
+      </view>
+      <view class='quanNumber'>X2</view>
+    </view>
+    <view class='quanBox'>
+      <view class='quanBgBox'>
+        <image src='/images/2.png' mode='widthFix'></image>
+        <view class='quanName'>10元加油券</view>
+      </view>
+      <view class='quanNumber'>X2</view>
+    </view>
+    <image bindtap='close' class='close' src='/images/close.png'></image>
+  </view>
+ 
+</view>

@@ -1,0 +1,31 @@
+<view class="container">
+  <view class='bigBox'>
+    <view class='title1'>当前积分</view>
+    <view class='jf'>￥2120000</view>
+    <view class='bigSbox'>
+      <view class='bigSbox1'>
+        <view class='title2'>累计获得</view>
+        <view class='jf2'>￥12000</view>
+      </view>
+      <view class='bigSbox2'>
+        <view class='title2'>已消耗</view>
+        <view class='jf2'>￥-12000</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 循环 -->
+  <view class='time'>2018年1月</view>
+  <view class='box'>
+    <view class='box1'>
+      <view>加油200元，获得20积分(3倍)</view>
+      <view class='add'>+20</view>
+    </view>
+    <view class='box2'>
+      <view>支付宝支付</view>
+      <view>2018/1/21</view>
+    </view>
+  </view>
+
+
+</view>

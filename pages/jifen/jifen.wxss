@@ -1,0 +1,87 @@
+.bigBox {
+  width: 750rpx;
+  height: 258rpx;
+  background: rgba(240, 240, 240, 1);
+}
+
+.bigBox .title1 {
+  width: 690rpx;
+  margin-left: 30rpx;
+  font-size: 24rpx;
+  padding-top: 30rpx;
+  color: #888;
+}
+
+.bigBox .jf {
+  color: #f4552e;
+  width: 690rpx;
+  margin-left: 30rpx;
+  font-size: 46rpx;
+  line-height: 60rpx;
+}
+
+.bigBox .bigSbox {
+  width: 750rpx;
+  display: flex;
+  margin-top: 30rpx;
+}
+
+.bigBox .bigSbox .bigSbox1 {
+  width: 345rpx;
+  padding-left: 30rpx;
+}
+
+.bigBox .bigSbox .bigSbox2 {
+  width: 345rpx;
+  padding-left: 30rpx;
+  border-left: 1rpx solid #ccc;
+}
+
+.bigBox .bigSbox .title2 {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.bigBox .bigSbox .jf2 {
+  color: #f4552e;
+  font-size: 30rpx;
+  line-height: 40rpx;
+}
+
+.time {
+  color: #888;
+  font-size: 26rpx;
+  width: 690rpx;
+  margin-left: 30rpx;
+  line-height: 64rpx;
+}
+
+.box {
+  width: 750rpx;
+  height: 140rpx;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+.box .box1 {
+  display: flex;
+  width: 690rpx;
+  justify-content: space-between;
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  padding-top: 32rpx;
+}
+
+.box .box1 .add{
+  font-weight: bold;
+}
+
+.box .box2 {
+  display: flex;
+  width: 690rpx;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #888888;
+  padding-top: 12rpx;
+  margin-left: 30rpx;
+}

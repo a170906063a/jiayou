@@ -1,0 +1,51 @@
+<view class="tip">输入车牌信息</view>
+<view class='kuangBox {{carType=="新能源车"?"kuangBox1":"kuangBox2"}}'>
+  <view bindtap='chooseS' class='box'>{{boxContent1}}</view>
+  <view bindtap='chooseN' class='box' style='margin-right:40rpx;'>{{boxContent2}}</view>
+  <view bindtap='chooseN' class='box'>{{boxContent3}}</view>
+  <view bindtap='chooseN' class='box'>{{boxContent4}}</view>
+  <view bindtap='chooseN' class='box'>{{boxContent5}}</view>
+  <view bindtap='chooseN' class='box'>{{boxContent6}}</view>
+  <view bindtap='chooseN' class='box'>{{boxContent7}}</view>
+  <view bindtap='chooseN' class='box' style='{{carType=="新能源车"?"display:none":"display:block"}}'>{{boxContent8}}</view>
+</view>
+<view class='tips'>请务必填写真实，首次加油时加油员将核对车牌</view>
+<button bindtap='comfire' id='complete'>完成</button>
+
+<view class='keyBox' style='{{chooseSheng?"display:block":"display:none"}}'>
+  <block wx:for="{{keyArray}}" wx:key="index">
+    <view data-name='{{item.name}}' bindtap='choose' class='key'>{{item.name}}</view>
+  </block>
+  <view bindtap='changeCarType' class='carType'>{{carType}}</view>
+</view>
+
+
+<view class='keyBox' style='{{chooseNumber?"display:block":"display:none"}}'>
+  <view class='keySbox keySbox1'>
+    <block wx:for="{{numberArray}}" wx:key="index">
+      <view data-number='{{item.number}}' bindtap='chooseNumber' class='numberKey'>{{item.number}}</view>
+    </block>
+  </view>
+  <view class='keySbox keySbox1'>
+    <block wx:for="{{englishArray1}}" wx:key="index">
+      <view data-number='{{item.number}}' bindtap='chooseNumber' class='numberKey'>{{item.number}}</view>
+    </block>
+  </view>
+  <view class='keySbox keySbox2'>
+    <block wx:for="{{englishArray2}}" wx:key="index">
+      <view data-number='{{item.number}}' bindtap='chooseNumber' class='numberKey'>{{item.number}}</view>
+    </block>
+  </view>
+  <view class='keySbox keySbox3'>
+    <block wx:for="{{englishArray3}}" wx:key="index">
+      <view data-number='{{item.number}}' bindtap='chooseNumber' class='numberKey'>{{item.number}}</view>
+    </block>
+  </view>
+ <view class='keySbox keySbox3'>
+    <view bindtap='deleteKey' class='delete'>删除</view>
+    <view data-number='学' bindtap='chooseNumber' class='xue'>学</view>
+    <view data-number='警' bindtap='chooseNumber' class='xue'>警</view>
+    <view data-number='领' bindtap='chooseNumber' class='xue'>领</view>
+    <view bindtap='complete' class='complete'>完成</view>
+  </view>
+</view>

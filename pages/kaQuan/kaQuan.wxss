@@ -1,0 +1,40 @@
+.box {
+  width: 750rpx;
+  height: 104rpx;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+.box1 {
+  width: 690rpx;
+  overflow: hidden;
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: #222;
+  line-height: 104rpx;
+}
+
+.box1 .tu {
+  width: 48rpx;
+  display: block;
+  float: left;
+  margin-top: 28rpx;
+}
+
+.box1 .title {
+  font-size: 30rpx;
+  color: #222;
+  line-height: 104rpx;
+  margin-left: 22rpx;
+}
+
+.box1 .number {
+  float: right;
+}
+
+.box1 .row{
+  float: right;
+  width: 48rpx;
+  margin-top: 28rpx;
+  display: block;
+}

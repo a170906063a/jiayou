@@ -1,0 +1,8 @@
+<!--pages/sao/sao.wxml-->
+<view class='imageBox'>
+  <image src='/images/logo.png' mode='widthFix'></image>
+</view>
+<input type='number' id='phone' placeholder='请输入手机号'></input>
+<input type='number' id='code' placeholder='请输入短信验证码'></input>
+<view class='getCode'>获取验证码</view>
+<button type='primary' class='btn'>登录</button>

@@ -1,0 +1,6 @@
+<!--pages/sao/sao.wxml-->
+<view class='imageBox'>
+  <image src='/images/logo.png' mode='widthFix'></image>
+</view>
+<text class='tip'>请先绑定加油站\n扫描加油站员工小程序码即可绑定</text>
+<button type="primary" class='saoBtn'>扫描</button>

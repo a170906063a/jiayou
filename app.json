@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/jiayouRecord/jiayouRecord",
+    "pages/kaQuan/kaQuan",
+    "pages/jifen/jifen",
+   
+    "pages/loginPage/loginMessage/loginMessage",
+    "pages/loginPage/login/login",
+    "pages/loginPage/sao/sao",
+    "pages/loginPage/plateMessage/plateMessage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我家加油",
+    "navigationBarTextStyle": "black"
+  }
+}

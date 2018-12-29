@@ -1,0 +1,164 @@
+.tip {
+  position: absolute;
+  font-size: 30rpx;
+  font-weight: 600;
+  left: 30rpx;
+  top: 80rpx;
+}
+
+.kuangBox {
+  position: absolute;
+  top: 160rpx;
+  overflow: hidden;
+}
+
+.kuangBox1 {
+  width: 650rpx;
+  left: 66rpx;
+}
+
+.kuangBox2 {
+  width: 730rpx;
+  left: 20rpx;
+}
+
+.kuangBox .box {
+  float: left;
+  width: 70rpx;
+  height: 70rpx;
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  margin-right: 16rpx;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 35rpx;
+}
+
+.tips {
+  position: absolute;
+  color: #fb4b20;
+  left: 60rpx;
+  top: 250rpx;
+  font-size: 26rpx;
+}
+
+#complete {
+  position: absolute;
+  width: 592rpx;
+  left: 80rpx;
+  top: 340rpx;
+  background: #fb4b20;
+  color: white;
+  border: none;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.keyBox {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 745rpx;
+  overflow: hidden;
+  background: #ccc;
+  padding-bottom: 30rpx;
+  padding-top: 6rpx;
+  padding-left: 6rpx;
+  -webkit-animation: slideInDown 0.5s ease both;
+  display: none;
+}
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translateY(100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+
+.keyBox .key {
+  width: 86rpx;
+  height: 86rpx;
+  text-align: center;
+  line-height: 86rpx;
+  background: white;
+  float: left;
+  font-size: 30rpx;
+  margin: 4rpx;
+  border-radius: 10rpx;
+  box-shadow: 0px 1px 0px #000000;
+}
+
+.carType {
+  width: 200rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+  margin-left: 275rpx;
+  margin-top: 22rpx;
+  line-height: 60rpx;
+  float: left;
+  background: #fb4b20;
+  text-align: center;
+  color: white;
+  font-size: 30rpx;
+}
+
+.keySbox {
+  width: 750rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.keySbox .numberKey {
+  width: 62rpx;
+  height: 84rpx;
+  border-radius: 20rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 84rpx;
+  background: white;
+  margin: 6rpx;
+  box-shadow: 0px 1px 0px #000000;
+}
+
+.delete{
+  width: 156rpx;
+  height: 84rpx;
+  border-radius: 20rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 84rpx;
+  background: white;
+  margin: 6rpx;
+  box-shadow: 0px 1px 0px #000000;
+}
+
+.complete{
+  width: 156rpx;
+  height: 84rpx;
+  border-radius: 20rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 84rpx;
+  background: white;
+  margin: 6rpx;
+  box-shadow: 0px 1px 0px #000000;
+}
+
+.xue{
+  width: 106rpx;
+  height: 84rpx;
+  border-radius: 20rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 84rpx;
+  background: white;
+  margin: 6rpx;
+  margin-left: 12rpx;
+  margin-right: 12rpx;
+  box-shadow: 0px 1px 0px #000000;
+}

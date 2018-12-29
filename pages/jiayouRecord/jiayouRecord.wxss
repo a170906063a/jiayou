@@ -1,0 +1,123 @@
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+.btnBox {
+  width: 750rpx;
+  font-size: 26rpx;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  background: white;
+}
+
+.btnBox .record {
+  width: 50%;
+}
+
+.choose {
+  color: #fb4b21;
+  border-bottom: 1px solid #fb4b21;
+}
+
+.bigBox {
+  padding-top: 30rpx;
+  width: 750rpx;
+  height: 228rpx;
+  background: rgba(240, 240, 240, 1);
+}
+
+.bigBox .title {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.bigBox .jf {
+  color: #f4552e;
+  width: 690rpx;
+  font-size: 46rpx;
+  line-height: 60rpx;
+}
+
+.bigBox .bigSbox {
+  width: 750rpx;
+  display: flex;
+}
+
+.bigBox .bigSbox .bigSbox1 {
+  width: 345rpx;
+  padding-left: 30rpx;
+}
+
+.bigBox .bigSbox .bigSbox2 {
+  width: 345rpx;
+  padding-left: 30rpx;
+  border-left: 1rpx solid #ccc;
+}
+
+.bigBox .bigSbox .bigSbox3{
+  width: 230rpx;
+  margin-left:30rpx;
+  margin-top: 40rpx;
+}
+
+.bigBox .bigSbox .title2 {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.bigBox .bigSbox .jf2 {
+  color: #f4552e;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+
+.time {
+  color: #888;
+  font-size: 26rpx;
+  width: 690rpx;
+  margin-left: 30rpx;
+  line-height: 64rpx;
+}
+
+.box {
+  width: 750rpx;
+  height: 160rpx;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+.box .box1 {
+  display: flex;
+  width: 690rpx;
+  justify-content: space-between;
+  font-size: 30rpx;
+  margin-left: 24rpx;
+  padding-top: 32rpx;
+}
+
+.box .box2 {
+  display: flex;
+  width: 690rpx;
+  justify-content: space-between;
+  font-size: 36rpx;
+  color: #F4552E;
+  padding-top: 12rpx;
+  margin-left: 30rpx;
+  line-height: 60rpx;
+}
+
+.add {
+  font-size: 24rpx;
+}
+
+.tip{
+  font-size: 24rpx;
+  margin-top: 15rpx;
+  margin-left: 24rpx;
+}

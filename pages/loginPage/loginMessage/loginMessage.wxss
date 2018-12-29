@@ -1,0 +1,53 @@
+/* pages/sao/sao.wxss */
+
+.imageBox {
+  position: absolute;
+  left: 315rpx;
+  top: 80rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.imageBox image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+#phone {
+  position: absolute;
+  width: 580rpx;
+  top: 334rpx;
+  left: 85rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 30rpx;
+}
+
+#code {
+  position: absolute;
+  width: 580rpx;
+  top: 432rpx;
+  left: 85rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 30rpx;
+}
+
+.getCode {
+  position: absolute;
+  width: 150rpx;
+  top: 432rpx;
+  z-index: 10;
+  height: 30rpx;
+  font-size: 30rpx;
+  left: 516rpx;
+}
+
+.btn {
+  width: 590rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 554rpx;
+  font-size: 30rpx;
+  left: 80rpx;
+}

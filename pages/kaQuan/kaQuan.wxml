@@ -1,0 +1,50 @@
+<view class="container">
+  <view class='box'>
+    <view class='box1'>
+      <image class='tu' src='/images/coupan_ico_gas.png' mode='widthFix'></image>
+      <text class='title'>加油券</text>
+      <image class='row' src='/images/row.png' mode='widthFix'></image>
+      <text class='number'>15张</text>
+    </view>
+  </view>
+  <view class='box'>
+    <view class='box'>
+      <view class='box1'>
+        <image class='tu' src='/images/coupan_ico_wash.png' mode='widthFix'></image>
+        <text class='title'>洗车券</text>
+        <image class='row' src='/images/row.png' mode='widthFix'></image>
+        <text class='number'>15张</text>
+      </view>
+    </view>
+  </view>
+  <view class='box'>
+    <view class='box'>
+      <view class='box1'>
+        <image class='tu' src='/images/coupan_ico_shop.png' mode='widthFix'></image>
+        <text class='title'>便利店券</text>
+        <image class='row' src='/images/row.png' mode='widthFix'></image>
+        <text class='number'>15张</text>
+      </view>
+    </view>
+  </view>
+  <view class='box'>
+    <view class='box'>
+      <view class='box1'>
+        <image class='tu' src='/images/coupan_ico_cooperation.png' mode='widthFix'></image>
+        <text class='title'>合作商户券</text>
+        <image class='row' src='/images/row.png' mode='widthFix'></image>
+        <text class='number'>15张</text>
+      </view>
+    </view>
+  </view>
+  <view class='box'>
+    <view class='box'>
+      <view class='box1'>
+        <image class='tu' src='/images/coupan_ico_disable.png' mode='widthFix'></image>
+        <text class='title'>已失效</text>
+        <image class='row' src='/images/row.png' mode='widthFix'></image>
+        <text class='number'>15张</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,87 @@
+<view class="container">
+  <view class='btnBox'>
+    <view bindtap='choose1' class='record {{record==1?"choose":""}}'>加油记录</view>
+    <view bindtap='choose2' class='record {{record==2?"choose":""}}'>洗车记录</view>
+  </view>
+
+  <view class='recordBox {{record==1?"show":"hide"}}'>
+    <view class='bigBox'>
+      <view class='bigSbox'>
+        <view class='bigSbox1'>
+          <view class='title'>实付金额</view>
+          <view class='jf'>￥12000</view>
+        </view>
+        <view class='bigSbox2'>
+          <view class='title'>加油金额</view>
+          <view class='jf'>￥12000</view>
+        </view>
+      </view>
+
+      <view class='bigSbox'>
+        <view class='bigSbox3'>
+          <view class='title'>卡券抵油</view>
+          <view class='jf2'>￥12000</view>
+        </view>
+        <view class='bigSbox3'>
+          <view class='title'>积分抵油</view>
+          <view class='jf2'>￥12000</view>
+        </view>
+        <view class='bigSbox3'>
+          <view class='title'>会员优惠</view>
+          <view class='jf2'>￥12000</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 循环 -->
+    <view class='time'>2018年1月</view>
+    <view class='box'>
+      <view class='box1'>
+        <view>加油金额 ¥200</view>
+        <view>今天</view>
+      </view>
+      <view class='box2'>
+        <view>实付¥180</view>
+        <view class='add'>待评价</view>
+      </view>
+    </view>
+
+
+  </view>
+
+
+  <view class='recordBox {{record==2?"show":"hide"}}'>
+    <view class='bigBox'>
+      <view class='bigSbox'>
+        <view class='bigSbox1'>
+          <view class='title'>洗车记录</view>
+          <view class='jf'>21次</view>
+        </view>
+      </view>
+
+      <view class='bigSbox' style='margin-top:30rpx;'>
+        <view class='bigSbox1'>
+          <view class='title'>累计使用</view>
+          <view class='jf2'>21张</view>
+        </view>
+        <view class='bigSbox2'>
+          <view class='title'>剩余可用</view>
+          <view class='jf2'>12张</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 循环 -->
+    <view class='time'>2018年1月</view>
+    <view class='box' style='height:200rpx;'>
+      <view class='box1'>
+        <view>洗车一次，消耗一张洗车券</view>
+        <view style='color:#F4552E'>1张</view>
+      </view>
+      <view class='tip'>洗车券号：11245252352363462324</view>
+      <view class='tip'>2018-12-21 18:55:21</view>
+    </view>
+
+
+  </view>
+</view>
