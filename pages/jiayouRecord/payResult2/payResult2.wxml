@@ -1,0 +1,78 @@
+<!--pages/pay/payResult1/payResult1.wxml-->
+<view class='container'>
+  <view class='tip'><image src='/images/choose.png' mode='widthFix'></image>  已支付完成</view>
+  <view class='box1 box'>
+    <view class='content'>
+      <view class='name'>加油金额</view>
+      <view class='priceBox'>
+        <view class='icon'>￥</view>
+        <view class='price'>200</view>
+      </view>
+    </view>
+    <view class='content'>
+      <view class='name'>实际支付</view>
+      <view class='priceBox priceColor'>
+        <view class='icon'>￥</view>
+        <view class='price'>168</view>
+      </view>
+    </view>
+  </view>
+  <view class='box2 box'>
+    <view class='content'>
+      <view class='name nameColor'>卡券抵油</view>
+      <view class='priceBox priceColor'>
+        <view class='price'>-10元</view>
+      </view>
+    </view>
+    <view class='content'>
+      <view class='name nameColor'>积分抵油</view>
+      <view class='priceBox priceColor'>
+        <view class='price'>-10元</view>
+      </view>
+    </view>
+    <view class='content'>
+      <view class='name nameColor'>会员优惠(92#汽油会员降0.45元/升)</view>
+      <view class='priceBox priceColor'>
+        <view class='price'>-20元</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='box3 box'>
+    <view class='content'>
+      <view class='name'>支付时间</view>
+      <view class='priceBox'>
+        <view class='price'>2018-11-12 10:10:19</view>
+      </view>
+    </view>
+    <view class='content'>
+      <view class='name'>支付方式</view>
+      <view class='priceBox'>
+        <view class='price'>微信支付</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<view class='evaluationBox {{evaluation?"show":"hide"}}'>
+  <image bindtap='close' class='close' src='/images/close@2x.png' mode='widthFix'></image>
+  <view class='evaluationTitle'>您对本次加油服务满意吗？</view>
+  <view class='starBox'>
+    <image bindtap='choose1' class='star' src='/images/star@2x.png' mode='widthFix'></image>
+    <image bindtap='choose2' class='star' src='/images/star@2x.png' mode='widthFix'></image>
+    <image bindtap='choose3' class='star' src='/images/star@2x.png' mode='widthFix'></image>
+    <image bindtap='choose4' class='star' src='/images/star@2x.png' mode='widthFix'></image>
+    <image bindtap='choose5' class='star' src='/images/star@2x.png' mode='widthFix'></image>
+  </view>
+  <view class='wordBox'>
+    <view bindtap='chooseWord' class='word'>加油操作顺畅</view>
+    <view bindtap='chooseWord' class='word'>服务态度好</view>
+  </view>
+  <textarea></textarea>
+  <view class='circleBox'>
+    <view class='circle'></view>
+    <view class='niming'>匿名评价</view>
+  </view>
+  <view class='submit'>提交</view>
+</view>

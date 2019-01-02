@@ -1,7 +1,4 @@
-var requests = require('../../../utils/request.js');
-var that;
-var app=getApp();
-// pages/login/login.js
+// pages/kaQuan/jiayoucard/userRule/userRule.js
 Page({
 
   /**
@@ -15,16 +12,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    that=this;
+
   },
-  wxLogin:function(){
-    
-  }, 
-  mobileLogin: function () {
-    wx.navigateTo({
-      url: '/pages/loginPage/loginMessage/loginMessage',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -1,30 +1,24 @@
-var requests = require('../../../utils/request.js');
-var that;
-var app=getApp();
-// pages/login/login.js
+// pages/pay/payResult1/payResult1.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    evaluation:true
   },
-
+  close: function () {
+    this.setData({
+      evaluation: false
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    that=this;
+
   },
-  wxLogin:function(){
-    
-  }, 
-  mobileLogin: function () {
-    wx.navigateTo({
-      url: '/pages/loginPage/loginMessage/loginMessage',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

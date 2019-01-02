@@ -1,0 +1,210 @@
+/* pages/pay/payResult1/payResult1.wxss */
+.box{
+  width: 690rpx;
+  margin-left: 30rpx;
+  background: white;
+}
+
+.box1{
+  margin-top: 20rpx;
+  height: 160rpx;
+  border-radius: 10rpx 10rpx 0 0;
+}
+
+.box2{
+  margin-top: 2rpx;
+  height: 210rpx;
+  border-radius: 0 0 10rpx 10rpx; 
+}
+
+.box .content{
+  width: 630rpx;
+  margin-left: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25rpx;
+  font-size: 30rpx;
+}
+
+.box .content .icon{
+  font-size: 20rpx;
+  margin-top: 10rpx;
+}
+
+.box .content .priceBox{
+  display: flex;
+}
+
+.box .content .nameColor{
+  color: #FFAB05;
+}
+
+.box .content .priceColor{
+  color: #F4552E;
+}
+
+.titleBox{
+  width: 640rpx;
+  margin: 30rpx auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.titleBox .line{
+  width: 200rpx;
+  height: 2rpx;
+  background: #ccc;
+  line-height: 30rpx;
+  margin-top: 15rpx;
+}
+
+.titleBox .title{
+  font-size: 30rpx;
+  line-height: 30rpx;
+}
+
+.bgBox{
+  width: 640rpx;
+  height: 144rpx;
+  margin: 20rpx auto;
+  position: relative;
+}
+
+.bgBox .bg1{
+  width: 640rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bgBox .price{
+  position: absolute;
+  font-size: 48rpx;
+  color: #FFAB05;
+  left: 50rpx;
+  top: 40rpx;
+  display: flex;
+}
+
+.bgBox .price .dan{
+
+}
+
+.bgBox .descript{
+  position: absolute;
+  font-size: 30rpx;
+  left: 240rpx;
+  top: 35rpx;
+}
+
+.bgBox .jifen{
+  top: 50rpx!important;
+}
+
+.bgBox .time{
+  position: absolute;
+  font-size: 20rpx;
+  left: 240rpx;
+  top: 80rpx;
+}
+
+.evaluationBox{
+  position: absolute;
+  width: 750rpx;
+  height: 666rpx;
+  box-shadow: 0 0 5rpx #6b6969;
+  background: #ffffff;
+  bottom: 0;
+  left: 0;
+}
+
+.evaluationBox .close{
+  width: 48rpx;
+  position: absolute;
+  right: 5rpx;
+  top: 5rpx;
+}
+
+.evaluationBox .evaluationTitle{
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 150rpx;
+}
+
+.evaluationBox .starBox{
+  width: 500rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.evaluationBox .starBox .star{
+  width: 50rpx;
+}
+
+.wordBox{
+  width: 690rpx;
+  margin: 30rpx auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.wordBox .word{
+  width: 320rpx;
+  height:56rpx;
+  text-align: center;
+  line-height: 56rpx;
+  font-size: 24rpx;
+  border:1rpx solid #AAAAAA;
+  border-radius: 10rpx;
+  color: #AAAAAA;
+}
+
+textarea{
+  width: 660rpx;
+  margin: 20rpx auto;
+  height: 156rpx;
+  padding: 15rpx;
+  background: #ccc;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+}
+
+.circleBox{
+  width: 690rpx;
+  margin: 10rpx auto;
+  display: flex;
+}
+
+.circleBox .circle{
+  width: 28rpx;
+  height: 28rpx;
+  border-radius: 100%;
+  border:2rpx solid #AAAAAA;
+}
+
+.circleBox .niming{
+  font-size: 26rpx;
+  line-height: 32rpx;
+  margin-left: 10rpx;
+}
+
+.submit{
+  width: 690rpx;
+  margin: 20rpx auto;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  background: #FB4B20;
+  color: white;
+  border-radius: 10rpx;
+}
+
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}

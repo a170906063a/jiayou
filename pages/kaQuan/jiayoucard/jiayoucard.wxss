@@ -1,0 +1,78 @@
+.kaBox{
+  width: 690rpx;
+  height: 182rpx;
+  background: white;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.kaBox .box1{
+  width: 690rpx;
+  height: 124rpx;
+  border-bottom:2px dotted rgba(223,223,223,1);
+  display: flex;
+  justify-content:space-between;
+}
+
+.kaBox .box1 .denominationBox{
+  width: 100rpx;
+  margin-left: 20rpx;
+}
+
+.kaBox .box1 .denominationBox .denomination1{
+  width: 100rpx;
+  display: flex;
+  color: #F4552E;
+  font-size: 22rpx;
+  height: 50rpx;
+  margin-top: 15rpx;
+}
+
+.kaBox .box1 .denominationBox .denomination2{
+  font-size: 50rpx;
+}
+
+.kaBox .box1 .denominationBox .yuan{
+  vertical-align:bottom;
+  height: 50rpx;
+  margin-top: 28rpx;
+}
+
+.kaBox .box1 .denominationBox .name{
+  font-size: 22rpx;
+  line-height: 40rpx;
+}
+
+.kaBox .box1 .rule{
+  font-size: 22rpx;
+  color: #222222;
+  line-height: 124rpx;
+}
+
+.kaBox .box1 .ruleBtn{
+  color: #F5A623;
+  font-size: 22rpx;
+  line-height: 124rpx;
+  margin-right: 20rpx;
+}
+
+.kaBox .box2{
+  width: 690rpx;
+  overflow: hidden;
+}
+
+.kaBox .box2 .site{
+  font-size: 22rpx;
+  color: #888888;
+  margin-left: 20rpx;
+  line-height: 56rpx;
+  float: left;
+}
+
+.kaBox .box2 .time{
+  font-size: 22rpx;
+  color: #FB4B20;
+  float: right;
+  margin-right: 20rpx;
+  line-height: 56rpx;
+}

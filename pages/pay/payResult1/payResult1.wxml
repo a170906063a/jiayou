@@ -1,0 +1,105 @@
+<!--pages/pay/payResult1/payResult1.wxml-->
+<view class='container'>
+  <view class='box1 box'>
+    <view class='content'>
+      <view class='name'>加油金额</view>
+      <view class='priceBox'>
+        <view class='icon'>￥</view>
+        <view class='price'>200</view>
+      </view>
+    </view>
+    <view class='content'>
+      <view class='name'>实际支付</view>
+      <view class='priceBox priceColor'>
+        <view class='icon'>￥</view>
+        <view class='price'>168</view>
+      </view>
+    </view>
+  </view>
+  <view class='box2 box'>
+    <view class='content'>
+      <view class='name nameColor'>卡券抵油</view>
+      <view class='priceBox priceColor'>
+        <view class='price'>-10元</view>
+      </view>
+    </view>
+    <view class='content'>
+      <view class='name nameColor'>积分抵油</view>
+      <view class='priceBox priceColor'>
+        <view class='price'>-10元</view>
+      </view>
+    </view>
+    <view class='content'>
+      <view class='name nameColor'>会员优惠(92#汽油会员降0.45元/升)</view>
+      <view class='priceBox priceColor'>
+        <view class='price'>-20元</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='titleBox'>
+    <view class='line'></view>
+    <view class='title'>恭喜您获得</view>
+    <view class='line'></view>
+  </view>
+
+  <!-- 加油券 -->
+  <view class='bgBox'>
+    <image class='bg1' src='/images/jiayouq@2x.png' mode='widthFix'></image>
+    <view class='price'>8元</view>
+    <view class='descript'>10元加油券</view>
+    <view class='time'>有效期至2019-01-20</view>
+  </view>
+
+  <!-- 积分 -->
+  <view class='bgBox'>
+    <image class='bg1' src='/images/jifen@2x.png' mode='widthFix'></image>
+    <view class='price'>3
+      <view class='dan'>个</view>
+    </view>
+    <view class='descript jifen'>积分</view>
+  </view>
+
+
+  <!-- 洗车券 -->
+  <view class='bgBox'>
+    <image class='bg1' src='/images/xichequan@2x.png' mode='widthFix'></image>
+    <view class='price'>3
+      <view class='dan'>张</view>
+    </view>
+    <view class='descript'>洗车券</view>
+    <view class='time'>有效期至2019-01-20</view>
+  </view>
+
+  <!-- 便利店券 -->
+  <view class='bgBox'>
+    <image class='bg1' src='/images/xichequan@2x.png' mode='widthFix'></image>
+    <view class='price'>3
+      <view class='dan'>张</view>
+    </view>
+    <view class='descript'>便利店券</view>
+    <view class='time'>有效期至2019-01-20</view>
+  </view>
+</view>
+
+<view class='evaluationBox {{evaluation?"show":"hide"}}'>
+  <image bindtap='close' class='close' src='/images/close@2x.png' mode='widthFix'></image>
+  <view class='evaluationTitle'>您对本次加油服务满意吗？</view>
+  <view class='starBox'>
+    <image bindtap='choose1' class='star' src='/images/star@2x.png' mode='widthFix'></image>
+    <image bindtap='choose2' class='star' src='/images/star@2x.png' mode='widthFix'></image>
+    <image bindtap='choose3' class='star' src='/images/star@2x.png' mode='widthFix'></image>
+    <image bindtap='choose4' class='star' src='/images/star@2x.png' mode='widthFix'></image>
+    <image bindtap='choose5' class='star' src='/images/star@2x.png' mode='widthFix'></image>
+  </view>
+  <view class='wordBox'>
+    <view bindtap='chooseWord' class='word'>加油操作顺畅</view>
+    <view bindtap='chooseWord' class='word'>服务态度好</view>
+  </view>
+  <textarea></textarea>
+  <view class='circleBox'>
+    <view class='circle'></view>
+    <view class='niming'>匿名评价</view>
+  </view>
+  <view class='submit'>提交</view>
+</view>

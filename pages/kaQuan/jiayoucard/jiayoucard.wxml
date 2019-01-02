@@ -1,0 +1,21 @@
+<view class="container">
+
+  <view class='kaBox'>
+    <view class='box1'>
+      <view class='denominationBox'>
+        <view class='denomination1'>
+          <view class='denomination2'>{{numberr}}</view>
+          <view class='yuan'>元</view>
+        </view>
+        <view class='name'>加油券</view>
+      </view>
+      <view class='rule'>{{rule}}</view>
+      <view class='ruleBtn'>使用规则></view>
+    </view>
+    <view class='box2'>
+      <view class='site'>{{site}}</view>
+      <view class='time'>{{time}}</view>
+    </view>
+  </view>
+
+</view>

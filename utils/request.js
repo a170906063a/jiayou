@@ -1,9 +1,39 @@
+var md5 = require('../utils/js-md5.js');
+
+
 var app = getApp();
-
-const API_BASE = 'http://news-at.zhihu.com/api/';
-
+const API_BASE = 'https://test-api.xjiayou.com/users/';
+var secret ="f8156a4ec792608f4a08eefe1ee07eda"
+var token="";
 var api = {
-	getThemeStories: API_BASE + 'theme'
+  //用户登录接口
+  loginIndex: API_BASE + 'v1/login/index',
+  //发送短信验证码接口
+  sendSms: API_BASE + 'sms/send',
+}
+
+//时间戳
+function getTimestamp(){
+  var timestamp = Date.parse(new Date());
+  timestamp = timestamp / 1000;
+  return timestamp;
+}
+
+/*
+* 生成sign签名
+*/
+function createSign(data) {
+  let keys = Object.keys(data);
+  keys = keys.sort();
+  let str = '';
+  keys.forEach(k => {
+    if (data[k] != '' && data[k] != 0 && data[k] != undefined) {
+      str += k + '=' + data[k] + '&';
+    }
+  });
+
+  str += 'appSecret=' + secret;
+  return md5.hex_md5(str);
 }
 
 /**
@@ -15,40 +45,50 @@ var api = {
  * @param completeCallback {function} 完成回调函数
  * @returns {void}
  */
-function requestData(url, data, successCallback, errorCallback, completeCallback) {
+function requestData(url, method, data, successCallback, errorCallback, completeCallback) {
 	if(app.debug) {
 		console.log('requestData url: ', url);
 	}
+  const headers = {
+    'X-SIGN': createSign(data),
+    'X-TOKEN': token ? token : ''
+  }
 	wx.request({
 		url: url,
 		data: data,
-		header: {
-			'Content-Type': 'application/json'
-		},
+    header: headers,
+    method: method,
 		success: function(res) {
 			if(app.debug) {
 				console.log('response data: ', res);
 			}
-			if(res.statusCode == 200)
-				util.isFunction(successCallback) && successCallback(res.data);
-			else
-				util.isFunction(errorCallback) && errorCallback();
+			if(res.statusCode == 200){
+        successCallback(res);
+        token = res.data.token;
+      }else{
+        errorCallback(res);
+      }
 		},
 		error: function() {
-			util.isFunction(errorCallback) && errorCallback();
+			errorCallback();
 		},
 		complete: function() {
-			util.isFunction(completeCallback) && completeCallback();
+			completeCallback();
 		}
 	});
 }
 
-function getThemeStories(themeId, successCallback, errorCallback, completeCallback) {
-	requestData(api.getThemeStories, {}, successCallback, errorCallback, completeCallback);
+//用户登录接口
+function loginIndex(themeId, method, data, successCallback, errorCallback, completeCallback) {
+  requestData(api.loginIndex, method, data, successCallback, errorCallback, completeCallback);
+}
+//发送短信验证码接口
+function sendSms(themeId, method, data, successCallback, errorCallback, completeCallback) {
+  requestData(api.sendSms, method, data, successCallback, errorCallback, completeCallback);
 }
 
 module.exports = {
-
-	getThemeStories: getThemeStories,
-
+  loginIndex: loginIndex,
+  sendSms: sendSms,
+  getTimestamp: getTimestamp,
 };

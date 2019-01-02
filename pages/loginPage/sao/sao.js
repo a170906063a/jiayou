@@ -16,7 +16,23 @@ Page({
   onLoad: function (options) {
 
   },
-
+  scanCode:function(){
+    wx.navigateTo({
+      url: '/pages/loginPage/login/login',
+    })
+    wx.scanCode({
+      success: (res) => {
+        console.log("扫码结果");
+        console.log(res);
+        this.setData({
+          img: res.result
+        })
+      },
+      fail: (res) => {
+        console.log(res);
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

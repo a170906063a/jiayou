@@ -34,13 +34,15 @@
 }
 
 .getCode {
-  position: absolute;
-  width: 150rpx;
-  top: 432rpx;
-  z-index: 10;
-  height: 30rpx;
-  font-size: 30rpx;
-  left: 516rpx;
+  position:absolute;
+  width:150rpx;
+  top:434rpx;
+  z-index:10;
+  height:50rpx;
+  font-size:30rpx;
+  left:516rpx;
+  line-height:50rpx;
+  color: #888888;
 }
 
 .btn {

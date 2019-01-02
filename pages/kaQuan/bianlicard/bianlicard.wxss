@@ -1,0 +1,67 @@
+.kaBox{
+  width: 690rpx;
+  height: 124rpx;
+  background: white;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.kaBox .box1{
+  width: 690rpx;
+  height: 124rpx;
+  display: flex;
+  justify-content:space-between;
+}
+
+.kaBox .box1 .denominationBox{
+  width: 150rpx;
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+  border-right:2px dotted rgba(223,223,223,1);
+  height: 95rpx;
+}
+
+.kaBox .box1 .denominationBox .denomination1{
+  width: 150rpx;
+  display: flex;
+  color: #F4552E;
+  font-size: 22rpx;
+  height: 50rpx;
+}
+
+.kaBox .box1 .denominationBox .denomination2{
+  font-size: 50rpx;
+}
+
+.kaBox .box1 .denominationBox .yuan{
+  vertical-align:bottom;
+  height: 50rpx;
+  margin-top: 28rpx;
+}
+
+.kaBox .box1 .denominationBox .name{
+  font-size: 22rpx;
+  line-height: 40rpx;
+}
+
+.kaBox .box1 .name{
+  margin-top: 12rpx;
+  font-size: 30rpx;
+}
+
+.kaBox .box1 .rule{
+  font-size: 22rpx;
+  color: #888888;
+}
+
+.kaBox .box1 .time{
+  font-size: 22rpx;
+  color: #888888;
+}
+
+.kaBox .box1 .ruleBtn{
+  color: #F5A623;
+  font-size: 22rpx;
+  line-height: 124rpx;
+  margin-right: 20rpx;
+}

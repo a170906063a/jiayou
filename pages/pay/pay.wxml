@@ -1,0 +1,38 @@
+<view class="container">
+    <view class="page page1" wx:if="{{status==0}}">
+      <text>支付中…</text>
+      <image src='../../images/paying@2x.jpg' mode='widthFix'></image>
+      <view class="mask"></view>
+    </view>
+    <view class="page page2" wx:else>
+
+      <block wx:if="{{status==1}}">
+      <image src="../../images/wechat@2x.png" mode='widthFix'></image>
+      <text style="margin-top: 20rpx;">
+      支付成功
+      {{message}}
+      </text>
+      <text class="money">¥ {{money}}</text>
+      </block>
+
+      <block wx:elif="{{status==2}}">
+      <image src="../../images/errorpay@2x.png" mode='widthFix' style="width:60rpx;"></image>
+      <text style="margin-top: 20rpx;">
+        支付失败
+        {{message}}
+      </text>
+      </block>
+
+      <block wx:if="{{!isIos}}">
+        <text class="back-tips">
+          请点击手机的返回按钮，打开我家加油
+        </text>
+      </block>
+      
+      <block wx:else>
+        <button open-type="launchApp" app-parameter="wechat" binderror="launchAppError">返回我家加油</button>
+      </block>
+
+    </view>
+    
+</view>

@@ -1,0 +1,7 @@
+<!--pages/kaQuan/jiayoucard/userRule/userRule.wxml-->
+<view class="container">
+  <view class='ruleBox'>
+    <view class='ruleName'>使用说明</view>
+    <text>·此券加油时使用（使用期限自获取之日60天）。\n ·此券现金汽油加油满100元可使用1张，满200元可使用2张， 以此类推。（如加油200元，可用2张券，最终实付180元）\n ·此券现金柴油加油满100元可使用1张，满200元可使用2张， 以此类推。（如加油400元，可用2张券，最终实付380元）\n ·此券不兑现、不找零、不开票、不抵现金、不能与积分优惠 同时使用。</text>
+  </view>
+</view>
