@@ -1,0 +1,38 @@
+.kaBox {
+  width: 690rpx;
+  background: white;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
+  border-radius: 5rpx;
+}
+
+.kaBox .box1 {
+  width: 566rpx;
+  height: 124rpx;
+  float: left;
+}
+
+.kaBox .box1 .name {
+  font-size: 36rpx;
+  line-height: 60rpx;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+}
+
+.kaBox .box1 .time {
+  font-size: 20rpx;
+  margin-left: 30rpx;
+}
+
+.kaBox .box2 {
+  width: 124rpx;
+  height: 124rpx;
+  text-align: center;
+  line-height: 124rpx;
+  float: right;
+  background: #dca64d;
+  font-size: 22rpx;
+  color: white;
+  border-radius: 5rpx;
+}

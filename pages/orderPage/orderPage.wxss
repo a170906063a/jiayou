@@ -1,0 +1,349 @@
+/* pages/orderPage/orderPage.wxss */
+
+.box {
+  width: 690rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  background: white;
+}
+
+.box1 {
+  width: 630rpx;
+  margin-left: 30rpx;
+  overflow: hidden;
+}
+
+.line {
+  border-bottom: 1rpx solid #dfdfdf;
+}
+
+.box1 .name {
+  height: 95rpx;
+  line-height: 95rpx;
+  float: left;
+  font-size: 30rpx;
+  color: black;
+  display: flex;
+}
+
+.box1 .name .tip {
+  color: #ffab05;
+  font-size: 20rpx;
+  margin-top: 5rpx;
+}
+
+.box1 .price {
+  float: right;
+  display: flex;
+  color: #f4552e;
+}
+
+.box1 .price1 {
+  font-size: 20rpx;
+  vertical-align: bottom;
+  margin-top: 37rpx;
+}
+
+.box1 .price2 {
+  line-height: 95rpx;
+  font-size: 30rpx;
+}
+
+.box1 .row {
+  float: right;
+  width: 48rpx;
+  height: 48rpx;
+  margin-top: 25rpx;
+}
+
+.slogan {
+  font-size: 26rpx;
+  color: #888;
+  width: 690rpx;
+  line-height: 60rpx;
+  margin-left: 30rpx;
+}
+
+.payBtn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 98rpx;
+  background: rgba(26, 173, 25, 1);
+  color: white;
+  line-height: 98rpx;
+  display: flex;
+  justify-content: center;
+  font-size: 24rpx;
+}
+
+.payBtn .money {
+  font-size: 40rpx;
+  margin-left: 10rpx;
+  margin-right: 15rpx;
+}
+
+/* 积分弹框 */
+
+.jifenBigBox {
+  width: 750rpx;
+  height: 100%;
+  z-index: 10;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.jifenBox {
+  width: 750rpx;
+  height: 860rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: white;
+}
+
+.jifenBox .title {
+  width: 750rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.jifenBox .hezi1 {
+  width: 750rpx;
+  height: 682rpx;
+  background: #eee;
+}
+
+.jifenBox .hezi2 {
+  width: 750rpx;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.jifenBox .hezi2 .chooseBtn {
+  width: 200rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-size: 26rpx;
+  background: white;
+  color: #aaa;
+  margin-top: 30rpx;
+}
+
+.jifenBox .hezi2 .chooseBtn2 {
+  width: 700rpx;
+  height: 88rpx;
+  text-align: center;
+  line-height: 88rpx;
+  color: #aaa;
+  font-size: 26rpx;
+  background: white;
+  margin-top: 30rpx;
+}
+
+.jifenBox .jifenBtn {
+  width: 750rpx;
+  height: 98rpx;
+  text-align: center;
+  line-height: 98rpx;
+  background: #ffab05;
+  font-size: 36rpx;
+  color: white;
+}
+
+/* 优惠券弹框 */
+
+.quanBigBox {
+  width: 750rpx;
+  height: 100%;
+  z-index: 10;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+}
+
+.quanBox {
+  width: 750rpx;
+  height: 860rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: white;
+}
+
+.quanBox .title {
+  width: 750rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.quanBox .hezi1 {
+  width: 750rpx;
+  height: 682rpx;
+  background: #eee;
+  overflow-y: scroll;
+}
+
+.quanBox .quanBtn {
+  width: 750rpx;
+  height: 98rpx;
+  text-align: center;
+  line-height: 98rpx;
+  background: #ffab05;
+  font-size: 36rpx;
+  color: white;
+}
+
+.quanBox .qbox {
+  width: 690rpx;
+  background: white;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  border-radius: 5rpx;
+}
+
+.unusebox{
+  color: #AAAAAA;
+  background: #F8F8F8!important;
+}
+
+.quanBox .qbox .qbox1 {
+  width: 690rpx;
+  height: 124rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx dotted #dfdfdf;
+}
+
+.quanBox .qbox .qbox1 .priceBox {
+  margin-left: 20rpx;
+}
+
+.quanBox .qbox .qbox1 .priceBox .price {
+  display: flex;
+  color: #f4552e;
+  margin-top: 20rpx;
+}
+
+.quanBox .qbox .qbox1 .priceBox .unprice{
+  color: #EEB0A1;
+}
+
+.quanBox .qbox .qbox1 .priceBox .price .price1 {
+}
+
+.quanBox .qbox .qbox1 .priceBox .price .price2 {
+  font-size: 20rpx;
+  margin-top: 18rpx;
+}
+
+.quanBox .qbox .qbox1 .priceBox .qname {
+  font-size: 20rpx;
+}
+
+.quanBox .qbox .qbox1 .descript {
+  font-size: 26rpx;
+  line-height: 124rpx;
+}
+
+.quanBox .qbox .qbox1 .choose {
+  width: 33rpx;
+  height: 33rpx;
+  margin-top: 48rpx;
+  margin-right: 20rpx;
+}
+
+.quanBox .qbox .qbox2 {
+  width: 650rpx;
+  margin-left: 20rpx;
+  height: 56rpx;
+  display: flex;
+  font-size: 20rpx;
+  line-height: 56rpx;
+  justify-content: space-between;
+}
+
+.quanBox .qbox .qbox2 .reason{
+  color: #F4552E;
+}
+
+.quanBox .qbox .qbox3 {
+  width: 650rpx;
+  margin-left: 20rpx;
+  display: flex;
+  font-size: 20rpx;
+  justify-content: space-between;
+  padding-bottom: 20rpx;
+}
+
+.unuseAlert{
+  width: 750rpx;
+  height: 100%;
+  z-index: 11;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;  
+  display: none;
+}
+
+.unuseAlert .unuseAlertBox{
+  position: absolute;
+  width: 560rpx;
+  height: 248rpx;
+  background: white;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  border-radius: 10rpx;
+}
+
+.unuseAlert .unuseAlertBox .word{
+  text-align: center;
+  font-size: 30rpx;
+  color: #222222;
+  display: flex;
+  justify-content: center;
+  margin-top: 64rpx;
+}
+
+.unuseAlert .unuseAlertBox .word .number{
+  color: #F4552E;
+}
+
+.unuseAlert .unuseAlertBox .hao{
+  width: 176rpx;
+  height: 50rpx;
+  margin-left: 192rpx;
+  top: 158rpx;
+  background: #FB4B20;
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 50rpx;
+  color: white;
+  font-size: 26rpx;
+  margin-top: 50rpx;
+}
+
+.unuseAlert .unuseAlertBox .close{
+  width: 48rpx;
+  position: absolute;
+  right: 10rpx;
+  top: 5rpx;
+  font-size: 40rpx;
+  font-family: '微软雅黑';
+}

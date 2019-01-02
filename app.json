@@ -1,5 +1,12 @@
 {
   "pages": [
+    "pages/orderPage/orderPage",
+    "pages/kaQuan/failure/failure",
+    "pages/kaQuan/bianlicard/bianlicard",
+    "pages/kaQuan/cooperatecard/cooperatecard",
+    "pages/kaQuan/washcard/washcard",
+    "pages/kaQuan/jiayoucard/userRule/userRule",
+    "pages/kaQuan/jiayoucard/jiayoucard",
     "pages/index/index",
     "pages/jiayouRecord/jiayouRecord",
     "pages/kaQuan/kaQuan",

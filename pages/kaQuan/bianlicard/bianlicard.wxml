@@ -1,0 +1,21 @@
+<view class="container">
+
+  <view class='kaBox'>
+    <view class='box1'>
+      <view class='denominationBox'>
+        <view class='denomination1'>
+          <view class='denomination2'>{{numberr}}</view>
+          <view class='yuan'>元</view>
+        </view>
+        <view class='name'>便利店券</view>
+      </view>
+      <view class='ruleBox'>
+        <view class='name'>海底捞火锅店个人抵用券</view>
+        <view class='rule'>(限火锅店使用)</view>
+        <view class='time'>有效期至：2019.02.28</view>
+      </view>
+      <view class='ruleBtn'>使用规则></view>
+    </view>
+  </view>
+
+</view>

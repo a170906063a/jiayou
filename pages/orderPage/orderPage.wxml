@@ -1,0 +1,127 @@
+<!--pages/orderPage/orderPage.wxml-->
+<view class='container'>
+  <view class='box'>
+    <view class='box1 line'>
+      <view class='name'>加油金额</view>
+      <view class='price'>
+        <view class='price1'>￥</view>
+        <view class='price2'>200</view>
+      </view>
+    </view>
+    <view class='box1'>
+      <view class='name'>油号</view>
+      <view class='price'>
+        <view class='price2'>92#</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='box'>
+    <view class='box1 line'>
+      <view class='name'>加油券</view>
+      <image class='row' src='/images/row.png'></image>
+      <view class='price price2'>2张</view>
+    </view>
+    <view class='box1 line'>
+      <view class='name'>积分</view>
+      <image class='row' src='/images/row.png'></image>
+      <view class='price price2'>23积分</view>
+    </view>
+    <view class='box1'>
+      <view class='name'>会员优惠
+        <view class='tip'>(92#汽油会员降0.45元/升)</view>
+      </view>
+      <view class='price price2'>-13元</view>
+    </view>
+  </view>
+  <view class='slogan'>提示：加油券与积分不可同时使用</view>
+
+  <view class='payBtn'>
+    <view>微信支付</view>
+    <view class='money'>￥136</view>
+    <view>已优惠¥13</view>
+  </view>
+
+  <view class='jifenBigBox'>
+    <view class='jifenBox'>
+      <view class='title'>选择积分</view>
+      <view class='hezi1'>
+        <view class='hezi2'>
+          <view data-jf='10' bindtap='jfchoose' class='chooseBtn'>10积分</view>
+          <view data-jf='15' bindtap='jfchoose' class='chooseBtn'>15积分</view>
+          <view data-jf='20' bindtap='jfchoose' class='chooseBtn'>20积分</view>
+          <view data-jf='25' bindtap='jfchoose' class='chooseBtn'>25积分</view>
+          <view data-jf='30' bindtap='jfchoose' class='chooseBtn'>30积分</view>
+          <view data-jf='35' bindtap='jfchoose' class='chooseBtn'>35积分</view>
+          <view data-jf='40' bindtap='jfchoose' class='chooseBtn'>40积分</view>
+          <view data-jf='50' bindtap='jfchoose' class='chooseBtn'>50积分</view>
+          <view data-jf='100' bindtap='jfchoose' class='chooseBtn'>100积分</view>
+          <view data-jf='23' bindtap='jfchoose' class='chooseBtn2'>全部积分23</view>
+        </view>
+      </view>
+      <view class='jifenBtn'>不使用积分</view>
+    </view>
+  </view>
+
+
+  <view class='quanBigBox'>
+    <view class='quanBox'>
+      <view class='title'>选择加油券</view>
+      <view class='hezi1'>
+
+        <!-- 可用券列表 -->
+        <view class='qbox'>
+          <view class='qbox1'>
+            <view class='priceBox'>
+              <view class='price'>
+                <view class='price1'>10</view>
+                <view class='price2'>元</view>
+              </view>
+              <view class='qname'>加油券</view>
+            </view>
+            <view class='descript'>汽油满100元，柴油满200元可用</view>
+            <image class='choose' src='/images/Oval@2x.png' mode='widthFix'></image>
+          </view>
+          <view class='qbox2'>
+            <view class='site'>限星翡加油站使用</view>
+            <view class='time'>有效期：2018.04.23-2018.10.30</view>
+          </view>
+        </view>
+
+        <!-- 不可用券列表 -->
+        <view class='qbox unusebox'>
+          <view class='qbox1'>
+            <view class='priceBox'>
+              <view class='price unprice'>
+                <view class='price1'>10</view>
+                <view class='price2'>元</view>
+              </view>
+              <view class='qname'>加油券</view>
+            </view>
+            <view class='descript'>汽油满100元，柴油满200元可用</view>
+            <image class='choose' src='/images/Oval@2x.png' mode='widthFix'></image>
+          </view>
+          <view class='qbox2'>
+            <view class='site'>限星翡加油站使用</view>
+            <view bindtap='reasonBtn' class='reason'>不可用原因</view>
+          </view>
+          <view class='qbox3'>
+            <view class='time'>有效期：2018.04.23-2018.10.30</view>
+            <view class='unuse'>未达到使用门槛</view>
+          </view>
+        </view>
+
+      </view>
+      <view class='quanBtn'>确认</view>
+    </view>
+  </view>
+
+  <!-- 不能使用的提示框 -->
+  <view class='unuseAlert'>
+    <view class='unuseAlertBox'>
+      <image class='close' src="/images/close@2x.png" mode="widthFix"></image>
+      <view class='word'>首次使用积分需满<view class='number'>20</view>分</view>
+      <view class='hao'>好的</view>
+    </view>
+  </view>
+</view>
