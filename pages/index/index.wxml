@@ -13,19 +13,16 @@
 </view> -->
 
 <swiper class='swiperBox' indicator-dots="{{indicatorDots}}" indicator-color="rgba(0,0,0,0.2)" indicator-active-color="#000000" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <swiper-item>
-    <image src="/images/Rectangle3@2x.png" class="slide-image" width="690" height="272" />
-    <view class='priceBigBox'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="690" height="272" />
+      <view class='priceBigBox'>
       <view class='priceBox' wx:for="{{priceList}}" wx:for-index="index" wx:for-item="item">
         <view class='hao'>{{item.number}}</view>
         <view class='price1'>{{item.price1}}</view>
         <view class='price2'>{{item.price2}}</view>
       </view>
     </view>
-  </swiper-item>
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image src="{{item}}" class="slide-image" width="690" height="272" />
     </swiper-item>
   </block>
 </swiper>
@@ -41,20 +38,20 @@
 <view class='iconBox'>
   <view class='iconSbox'>
     <image src='/images/Rectangle4@2x.png'></image>
-    <text>邀请红包(2)</text>
+    <text>邀请红包({{inviteRed}})</text>
   </view>
   <view class='iconSbox'>
     <view class='redDot'>12</view>
     <image src='/images/Rectangle5@2x.png'></image>
-    <text>卡券(2)</text>
+    <text>卡券({{cardVoucher}})</text>
   </view>
   <view class='iconSbox'>
     <image src='/images/Rectangle6@2x.png'></image>
-    <text>积分(2)</text>
+    <text>积分({{integral}})</text>
   </view>
   <view class='iconSbox'>
     <image src='/images/Rectangle118@2x.png'></image>
-    <text>加油记录(2)</text>
+    <text>加油记录({{gasRecord}})</text>
   </view>
 </view>
 

@@ -2,6 +2,6 @@
 <view class='imageBox'>
   <image src='/images/logo.png' mode='widthFix'></image>
 </view>
-<text class='tip'>亚孚郊尾站</text>
+<text class='tip'>我家加油</text>
 <button type="primary" bindtap='wxLogin' class='btn weixin'>微信登录</button>
 <button class='btn phone' bindtap='mobileLogin'>手机登录</button>

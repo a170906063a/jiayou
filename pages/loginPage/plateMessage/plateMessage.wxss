@@ -24,7 +24,7 @@
 
 .kuangBox .box {
   float: left;
-  width: 70rpx;
+  width: 68rpx;
   height: 70rpx;
   border: 1px solid #ccc;
   border-radius: 10rpx;
@@ -79,8 +79,8 @@
 }
 
 .keyBox .key {
-  width: 86rpx;
-  height: 86rpx;
+  width: 85rpx;
+  height: 85rpx;
   text-align: center;
   line-height: 86rpx;
   background: white;

@@ -4,5 +4,5 @@
 </view>
 <input type='number' id='phone' placeholder='请输入手机号' bindinput='inputChange' maxlength='11'></input>
 <input type='number' id='code' placeholder='请输入短信验证码'bindinput='inputChange'></input>
-<view class='getCode' bindtap='getCode' style="color:{{color}}">获取验证码</view>
+<view class='getCode' bindtap='getCode' style="color:{{color}}">{{second}}</view>
 <button type='primary' bindtap='goLogin' class='btn'>登录</button>

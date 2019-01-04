@@ -17,21 +17,46 @@ Page({
 
   },
   scanCode:function(){
-    wx.navigateTo({
-      url: '/pages/loginPage/login/login',
-    })
     wx.scanCode({
       success: (res) => {
-        console.log("扫码结果");
-        console.log(res);
-        this.setData({
-          img: res.result
+        var timestamp = requests.getTimestamp();
+        var method = 'POST'
+        var params = {
+          qrcode: res.result,//res.result,rawData
+          timestamp: timestamp
+        };
+        requests.bindGasFun('POST', params, (data) => {
+          console.log(data.data)
+          if (data.data.code=="10000"){
+            if (data.data.data.bind_step == "bind_car") {
+              wx.navigateTo({
+                url: '/pages/loginPage/plateMessage/plateMessage',
+              })
+              wx.setStorageSync('bindCardNum', '0')//需要绑定车牌
+            } else {
+              wx.navigateTo({
+                url: '/pages/index/index',
+              })
+              wx.setStorageSync('bindGas', '1')//已绑定加油站
+            }
+            
+            // wx.navigateTo({
+            //   url: '/pages/loginPage/login/login',
+            // })
+          }
         })
       },
       fail: (res) => {
         console.log(res);
       }
     })
+  },
+  alert: function (message) {
+    wx.showModal({
+      showCancel: false,
+      title: '提示信息',
+      content: message
+    });
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

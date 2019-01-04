@@ -1,5 +1,5 @@
 var requests = require('../../../utils/request.js');
-
+var that;
 // pages/sao/sao.js
 Page({
 
@@ -353,12 +353,43 @@ Page({
       })
       return;
     }
+    var car_no = this.data.boxContent1 + this.data.boxContent2 + this.data.boxContent3 + this.data.boxContent4 + this.data.boxContent5 + this.data.boxContent6 + this.data.boxContent7 + this.data.boxContent8;
+    var timestamp = requests.getTimestamp();
+    car_no=encodeURI(car_no)
+    var params = {
+      car_no: car_no,
+      timestamp: timestamp
+    };
+    requests.bindCarNum('POST', params, (data) => {
+      if (data.data.code == "10000") {
+        if (data.data.data.bind_step == "bind_gas") {
+          wx.navigateTo({
+            url: '/pages/loginPage/sao/sao',
+          })
+          wx.setStorageSync('bindGas', '0')//需要绑定加油站
+        } else {
+          wx.navigateTo({
+            url: '/pages/index/index',
+          })
+          wx.setStorageSync('bindCardNum', '1')//已绑定车牌
+        }
+      } else {
+        that.alert(data.data.msg)
+      }
+    })
+  },
+  alert: function (message) {
+    wx.showModal({
+      showCancel: false,
+      title: '提示信息',
+      content: message
+    });
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    that=this;
   },
 
   /**

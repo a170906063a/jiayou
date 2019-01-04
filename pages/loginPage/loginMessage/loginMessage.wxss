@@ -43,6 +43,7 @@
   left:516rpx;
   line-height:50rpx;
   color: #888888;
+  text-align: center;
 }
 
 .btn {

@@ -236,9 +236,6 @@ function binl2b64(binarray) {
   return str;
 }
 
-/**使用 方法 : hex_md5("123456");
- * 最好用 用户名(手机号)和密码同时 加密产生密文,这样存在数据库里的相同密码的密文就不一样了
-*/
 module.exports = {
-  hex_md5: hex_md5,
-};
+  hex_md5: hex_md5
+}

@@ -189,7 +189,7 @@
 }
 
 .jiayouBtn {
-  position: absolute;
+  position: fixed;
   width: 216rpx;
   left: 267rpx;
   bottom: 0;
